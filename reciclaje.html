@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Reciclaje - Gestion de Reciclaje</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registrar Material Reciclado</h1>
+        <!-- Formulario de reciclaje -->
+        <form id="form_reciclaje">
+            <label for="material">Tipo de Material:</label>
+            <select id="material">
+                <option value="plastico" data-valor="5">Plastico (5 puntos por kilo)</option>
+                <option value="vidrio" data-valor="3">Vidrio (3 puntos por kilo)</option>
+                <option value="papel" data-valor="4">Papel (4 puntos por kilo)</option>
+            </select>
+
+            <label for="cantidad">Cantidad Reciclada (kg):</label>
+            <input type="number" id="cantidad" min="0" step="0.1">
+
+            <label for="centro">Centro de Acopio:</label>
+            <select id="centro">
+                <option value="san_jose">San Jose</option>
+                <option value="alajuela">Alajuela</option>
+                <option value="cartago">Cartago</option>
+                <option value="cartago">Heredia</option>
+                <option value="cartago">Limon</option>
+                <option value="cartago">Guanacaste</option>
+                <option value="cartago">Puntarenas</option>
+            </select>
+            <br>
+
+            <button type="submit">Registrar</button>
+            <br>
+        </form>
+
+        <!-- Mostrar puntos obtenidos -->
+        <p id="puntos_usuario">Puntos actuales: 0</p>
+        <p id="puntos_obtenidos">Puntos obtenidos: 0</p>
+
+        <button onclick="window.location.href='menu.html'">Volver al Menu Principal</button>
+
+    </div>
+
+    <!-- Cargar script para reciclaje -->
+    <script src="assets/js/reciclaje.js"></script>
+</body>
+</html>

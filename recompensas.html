@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recompensas - Gestion de Reciclaje</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recompensas Disponibles</h1>
+        <br>
+        <!-- Lista de recompensas -->
+        <div id="lista_recompensas">
+            <div class="recompensa">
+                <h3>Bolsa Ecologica</h3>
+                <p>Puntos requeridos: 50</p>
+                <button class="btn_canjear" data-puntos="50">Canjear</button>
+            </div>
+
+            <div class="recompensa">
+                <h3>Botella Reutilizable</h3>
+                <p>Puntos requeridos: 100</p>
+                <button class="btn_canjear" data-puntos="100">Canjear</button>
+            </div>
+
+            <div class="recompensa">
+                <h3>Camisa Organica</h3>
+                <p>Puntos requeridos: 200</p>
+                <button class="btn_canjear" data-puntos="200">Canjear</button>
+            </div>
+        </div>
+
+        <p id="puntos_usuario">Puntos actuales: 0</p>
+        <br>
+
+        <button onclick="window.location.href='menu.html'">Volver al Menu Principal</button>
+
+    </div>
+
+    <!-- Cargar script para recompensas -->
+    <script src="assets/js/recompensas.js"></script>
+</body>
+</html>

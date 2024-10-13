@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal - Gestion de Reciclaje</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bienvenido al Menu Principal</h1>
+        <p id="nombre_usuario"></p>
+
+        <div class="menu-opciones">
+            <button onclick="window.location.href='estadisticas.html'">Ver Estadisticas</button>
+            <br><br>
+            <button onclick="window.location.href='reciclaje.html'">Registrar Reciclaje</button>
+            <br><br>
+            <button onclick="window.location.href='recompensas.html'">Ver Recompensas</button>
+            <br><br>
+            <!-- Boton de Cerrar Sesion -->
+            <button id="btn_logout">Cerrar Sesion</button>
+            <br><br>
+            <!-- Boton de Borrar Memoria -->
+            <button id="btn_reset">Reiniciar Datos</button>
+
+        </div>
+    </div>
+
+    <!-- Cargar el script del menu -->
+    <script src="assets/js/menu.js"></script>
+</body>
+
+</html>
